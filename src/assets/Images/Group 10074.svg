@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.75" height="24.5" viewBox="0 0 38.75 24.5">
+  <defs>
+    <filter id="Knob" x="15.25" y="0" width="23.5" height="23.5" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Knob-2" x="15.25" y="1" width="23.5" height="23.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_10074" data-name="Group 10074" transform="translate(-884 -348.25)">
+    <g id="Group_8638" data-name="Group 8638" transform="translate(39 129)">
+      <path id="Track" d="M37,12a6.957,6.957,0,0,1-7,7H10a6.957,6.957,0,0,1-7-7H3a6.957,6.957,0,0,1,7-7H30a6.957,6.957,0,0,1,7,7Z" transform="translate(842 219)" fill="#276ef1" opacity="0.5"/>
+      <g id="Knob-3" data-name="Knob" transform="translate(842 219)">
+        <g transform="matrix(1, 0, 0, 1, 3, 0.25)" filter="url(#Knob)">
+          <circle id="Knob-4" data-name="Knob" cx="10" cy="10" r="10" transform="translate(17 1.75)" fill="#276ef1" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 3, 0.25)" filter="url(#Knob-2)">
+          <circle id="Knob-5" data-name="Knob" cx="10" cy="10" r="10" transform="translate(17 1.75)" fill="#276ef1" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>
+        </g>
+      </g>
+    </g>
+    <path id="Path_40132" data-name="Path 40132" d="M10408.154-13207.286l2.6,2.591,5.879-5.95" transform="translate(-9500.836 13567.67)" fill="none" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>

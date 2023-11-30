@@ -1,0 +1,97 @@
+@import './Variables.scss';
+
+.App-header {
+    padding:6px 25px;
+    border-bottom:1px solid $border-color;
+    background-color: $white-color;
+    @include displayflexbasic;
+
+    .logo {
+        max-width: 15%;
+        width: $full-width;
+    }
+
+    .header-right {
+        width: 85%;
+        margin-top: 6px;
+        display: $display-flex;
+        .header-info {
+            border-left: 1px solid #e8f0fe;
+            padding-left: 16px;
+            span {
+                color: $text-color;
+                font-size: $base-font-size;
+                line-height: 18px;
+                display: $display-block;
+                margin-bottom: 3px;
+            }
+            h5 {
+                font-size: $font-size-16;
+                font-weight: $medium;
+                line-height: 20px;
+
+                i {
+                    display: $display-inline-block;
+                    vertical-align: middle;
+                    line-height: 1;
+                    margin-left: 8px;
+                }
+            }
+        }
+        .header-links {
+            margin-left: auto;
+            align-self: flex-end;
+
+            ul {
+                margin: 0px;
+                padding: 0px;
+                list-style:none;
+                li {
+                    display: $display-inline-block;
+                    text-align: center;
+                    margin-right: 24px;
+                    vertical-align: middle;
+                    a {
+                        display: $display-inline-block;
+                        text-decoration: none;
+                        font-size: 10px;
+                        color: $text-color;
+                        letter-spacing: 0.01em;
+                        line-height: 18px;
+                        text-transform: uppercase;
+                        i {
+                            display: $display-block;
+
+                            &.account-icon {
+                                width: 32px;
+                                height: 32px;
+                                background-color: #1D4D40;
+                                border-radius: 50%;
+                                font-size: 16px;
+                                color: $white-color;
+                                font-style: normal;
+                                vertical-align: middle;   
+                                line-height: 32px;
+                            }
+                        }
+                    }
+                    &.notification-icon {
+                        i {
+                            position: relative;
+                            &::before {
+                                position: absolute;
+                                right: 22px;
+                                top: -3px;
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50%;
+                                background-color: $error-color;
+                                content: '';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

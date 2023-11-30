@@ -1,0 +1,35 @@
+/* Colors */
+$primary-color: #276EF1;
+$secondary-color:#3C4043;
+$white-color: #ffffff;
+$error-color:#D7242E;
+$light-grey: #F7F7F7;
+$light-sky-blue:#F2F6FF;
+$border-color:#DADCE0;
+$light-text:#DADCE0;
+$text-color:#5F6368;
+$bg:#FDFEFF ;
+
+/* Fonts Size */
+$base-font-size:14px;
+$font-size-16:16px;
+
+$regular:400;
+$medium:500;
+$semi-bold:600;
+$bold:700;
+
+
+/* Width */
+$full-width: 100%;
+
+/* common styles */
+$display-block: block;
+$display-flex: flex;
+$display-inline-block: inline-block;
+
+/* Mixins */
+@mixin displayflexbasic {
+    display: $display-flex;
+    flex-direction: row;
+}
